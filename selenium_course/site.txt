@@ -1,0 +1,12 @@
+import time
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+link = "https://www.cybersport.ru/"
+try:
+    browser = webdriver.Chrome()
+    browser.get(link)
+    time.sleep(1100)
+    
+
+finally:
+    browser.quit()
